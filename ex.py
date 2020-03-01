@@ -11,7 +11,7 @@ import numpy as np
 #     save_path = saver.save(sess,"./save_net.ckpt")
 #     print(save_path)
 
-W = tf.Variable(np.arange(6).reshape((2,3)),dtype=tf.float32,name="Weight")
+W = tf.Variable(np.arange(6).reshape((2,3)),dtype=tf.float32,name="Weight")   #与上面格式必须一样
 b = tf.Variable(np.arange(3).reshape((1,3)),dtype=tf.float32,name="bias")
 saver = tf.train.Saver()
 with tf.Session() as sess:
